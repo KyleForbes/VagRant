@@ -1,0 +1,231 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Product</Name>
+        <Access>Public</Access>
+        <Location left="244" top="55" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int id</Member>
+        <Member type="Field">private String productName</Member>
+        <Member type="Field">private int quantityOwned</Member>
+        <Member type="Field">private int weight</Member>
+        <Member type="Field">private string productType</Member>
+        <Member type="Field">private String location</Member>
+        <Member type="Constructor">protected Product()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>printDatInfo</Name>
+        <Access>Public</Access>
+        <Location left="31" top="55" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void printItFam()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>Inventory</Name>
+        <Access>Public</Access>
+        <Location left="713" top="55" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ArrayList&lt;Product&gt; products</Member>
+        <Member type="Constructor">public Inventory()</Member>
+        <Member type="Method">public void updateStock()</Member>
+        <Member type="Method">public void loadStock()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Customer</Name>
+        <Access>Public</Access>
+        <Location left="203" top="661" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String firstName</Member>
+        <Member type="Field">private String lastName</Member>
+        <Member type="Field">private String ID</Member>
+        <Member type="Field">private String phoneNumber</Member>
+        <Member type="Field">private String address</Member>
+        <Member type="Constructor">protected Customer()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Furniture</Name>
+        <Access>Public</Access>
+        <Location left="31" top="347" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int seatingCapacity</Member>
+        <Member type="Field">private String furnitureType</Member>
+        <Member type="Field">private int width</Member>
+        <Member type="Field">private String material</Member>
+        <Member type="Constructor">public Furniture()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Warehouse</Name>
+        <Access>Public</Access>
+        <Location left="818" top="395" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Warehouse()</Member>
+        <Member type="Method">public void checkOutOrder()</Member>
+        <Member type="Method">public void prepareOrder()</Member>
+        <Member type="Method">public String[] listOrders()</Member>
+        <Member type="Method">public void requiresPWare()</Member>
+        <Member type="Method">public void updateAccounts(customerOrder co)</Member>
+        <Member type="Method">public void updateAccounts(purchaseOrder po)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PurchaseOrder</Name>
+        <Access>Public</Access>
+        <Location left="624" top="948" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private double cost</Member>
+        <Member type="Field">private ArrayList&lt;Product&gt; productID</Member>
+        <Member type="Constructor">public PurchaseOrder()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Tools</Name>
+        <Access>Public</Access>
+        <Location left="244" top="347" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String toolType</Member>
+        <Member type="Field">private Boolean powerTools</Member>
+        <Member type="Constructor">public Tools()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Entertainment</Name>
+        <Access>Public</Access>
+        <Location left="484" top="347" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String entertainmentType</Member>
+        <Member type="Field">private String material</Member>
+        <Member type="Field">private Boolean requiresElectricity</Member>
+        <Member type="Constructor">public Entertainment()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Order</Name>
+        <Access>Public</Access>
+        <Location left="521" top="645" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String orderID</Member>
+        <Member type="Field">private String date</Member>
+        <Member type="Constructor">protected Order()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CustomerOrder</Name>
+        <Access>Public</Access>
+        <Location left="403" top="948" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int customerID</Member>
+        <Member type="Field">private String shippingAddress</Member>
+        <Member type="Field">private double totalCost</Member>
+        <Member type="Field">private ArrayList&lt;Product&gt; productID</Member>
+        <Member type="Field">private String orderStatus</Member>
+        <Member type="Field">private Boolean requiresPW</Member>
+        <Member type="Constructor">public CustomerOrder()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GUI</Name>
+        <Access>Public</Access>
+        <Location left="1082" top="251" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public GUI()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="9" second="5">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>376</X>
+          <Y>995</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="9" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="9" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
